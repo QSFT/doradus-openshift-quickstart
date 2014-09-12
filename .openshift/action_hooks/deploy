@@ -30,5 +30,5 @@ else
 	sed -ig 's,/var/log/cassandra,$HOME/app-root/data/cassandra-data,' log4j-server.properties
 	sed -ig 's,${max_sensible_yg_in_mb}M,256M,' cassandra-env.sh
 	sed -ig 's,${desired_yg_in_mb}M,256M,' cassandra-env.sh
-	sed -ig '/jmxremote/s/^/#/' cassandra-env.sh
+	sed -ig '/jmxremote/s/^/#/' cassandra-env.sh	
 fi
