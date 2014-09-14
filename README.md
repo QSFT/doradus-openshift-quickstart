@@ -1,4 +1,4 @@
-JPA in OpenShift Quickstart
+Doradus on OpenShift Quickstart
 ===============================
 
 This is a simple Red Hat OpenShift example that will deploy a simple single-instance Cassandra and Doradus (https://github.com/dell-oss/Doradus) 
