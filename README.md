@@ -30,11 +30,11 @@ Test
     rhc port-forward
 
     On a local machine, when you connect to the local loopback address on port 1105, 
-    you actually connect to Doradus on the gear. Invoke this URL to list all applications under Doradus. 
+    you actually connect to Doradus on the gear. 
+    Invoke this URL to list all applications under Doradus:
     http://127.0.0.1:1105/_applications
     For the first time, you should expect to see empty list.
     
-
     Using Rest Client, post this XML schema to create a new application and its tables 
     in Doradus via the URL above
      <application name="MyApplication"> 
