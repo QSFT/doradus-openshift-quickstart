@@ -36,7 +36,7 @@ Test
     Using Rest Client, post this XML schema to create a new application and its tables 
     in Doradus via the URL above
      <application name="MyApplication"> 
-            <key>Tra</key> 
+            <key>Test123</key> 
             <options> 
                 <option name="StorageService">SpiderService</option> 
             </options> 
