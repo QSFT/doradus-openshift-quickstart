@@ -7,7 +7,6 @@ cd $OPENSHIFT_DATA_DIR/cassandra
 bin/cassandra
 export CQLSH_HOST=$OPENSHIFT_DIY_IP
 export CQLSH_PORT=19160
-sleep 10
-cd $OPENSHIFT_REPO_DIR/doradus-server/bin/
-java -cp "../lib/*:../config/*" com.dell.doradus.core.DoradusServer -dbhost $OPENSHIFT_DIY_IP -dbport 19160 -restaddr $OPENSHIFT_DIY_IP -restport $OPENSHIFT_DIY_PORT
 sleep 20
+cd $OPENSHIFT_DATA_DIR/doradus-server/bin/
+java -cp "../lib/*:../config/*" com.dell.doradus.core.DoradusServer -dbhost $OPENSHIFT_DIY_IP -dbport 19160 -restaddr $OPENSHIFT_DIY_IP -restport $OPENSHIFT_DIY_PORT
