@@ -10,7 +10,7 @@ Running on OpenShift
 Create an account at https://www.openshift.com
 
 Creating Do It Yourself (DIY) Application. Note that diy is OpenShift keyword . 
-In this example, we will name our application doradusdemo.
+In this example, we will name our application "doradusdemo"
 
     rhc app create doradusdemo diy
 
@@ -27,8 +27,8 @@ Then push the repo upstream
 
 Test
 
-    Invoke this URL to list all applications under Doradus:
-    http://127.0.0.1:1105/_applications
+    Invoke this URL to list all applications under Doradus
+    http://doradusdemo-$yournamespace.$youropenshiftserver/_applications
     
     For the first time, you should expect to see empty list.
     
