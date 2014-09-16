@@ -9,8 +9,8 @@ Running on OpenShift
 
 Create an account at https://www.openshift.com
 
-Creating Do It Yourself (DIY) Application. Note that diy is OpenShift keyword . 
-In this example, we will name our application "doradusdemo"
+Create Do It Yourself (DIY) Application. 
+Note that diy is OpenShift keyword. In this example, we will name our application "doradusdemo"
 
     rhc app create doradusdemo diy
 
