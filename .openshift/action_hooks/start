@@ -12,5 +12,5 @@ cd $OPENSHIFT_REPO_DIR
 tar -xzvf doradus-server-2.2.tar.gz
 sleep 10
 cd $OPENSHIFT_REPO_DIR/doradus-server/bin/
-java -cp "../lib/*:../config/*" com.dell.doradus.core.DoradusServer -dbhost $OPENSHIFT_DIY_IP -dbport 19160 -restaddr $OPENSHIFT_DIY_IP -restport 1105
+java -cp "../lib/*:../config/*" com.dell.doradus.core.DoradusServer -dbhost $OPENSHIFT_DIY_IP -dbport 19160 -restaddr $OPENSHIFT_DIY_IP -restport 80
 sleep 20

@@ -1,7 +1,7 @@
 Doradus on OpenShift Quickstart
 ===============================
 
-This is a simple Red Hat OpenShift example that will deploy a simple single-instance Cassandra and Doradus (https://github.com/dell-oss/Doradus) 
+This is a simple Red Hat OpenShift example that demonstrates how to deploy and use Doradus (https://github.com/dell-oss/Doradus) as an OpenShift cartridge.  
 
 
 Running on OpenShift
@@ -9,7 +9,8 @@ Running on OpenShift
 
 Create an account at https://www.openshift.com
 
-Creating DIY Application 
+Creating Do It Yourself (DIY) Application. Note that diy is OpenShift keyword . 
+In this example, we will name our application doradusdemo.
 
     rhc app create doradusdemo diy
 
@@ -26,17 +27,14 @@ Then push the repo upstream
 
 Test
 
-    Port forward all listening ports over SSH:
-    rhc port-forward
-
-    On a local machine, when you connect to the local loopback address on port 1105, 
-    you actually connect to Doradus on the gear. 
     Invoke this URL to list all applications under Doradus:
     http://127.0.0.1:1105/_applications
+    
     For the first time, you should expect to see empty list.
     
     Using Rest Client, post this XML schema to create a new application and its tables 
     in Doradus via the URL above
+    
      <application name="MyApplication"> 
             <key>Test123</key> 
             <options> 
@@ -56,7 +54,7 @@ Test
             </tables> 
         </application>
     
-    Invoke the URL http://127.0.0.1:1105/_applications again to see the Doradus data
+    Invoke the URL http://doradusdemo-$yournamespace.$youropenshiftserver/_applications again to see the Doradus the application and its data.
 
     Read more about REST APIs on the Doradus website.
 
