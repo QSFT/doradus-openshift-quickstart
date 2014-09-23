@@ -17,7 +17,7 @@ Note that diy is OpenShift keyword. In this example, we will name our applicatio
 Add this upstream repo
 
     cd doradusdemo
-    git remote add upstream https://github.com/TraDuong1/doradus-openshift-quickstart
+    git remote add upstream https://github.com/dell-oss/doradus-openshift-quickstart
     git pull -s recursive -X theirs upstream master
 
 
